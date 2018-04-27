@@ -1,0 +1,244 @@
+body {
+	background-image: url(https://ak2.picdn.net/shutterstock/videos/21923776/thumb/1.jpg);
+	color: white;
+}
+
+footer {
+	background-color: gold;
+	color: maroon;
+	border-radius: 25px;
+	text-align: center;
+	padding: 5px;
+	height: 125px;
+}
+
+h2 {
+  font-family: 'Comic Sans MS', sans-serif;
+  color: gold;
+	text-align: center;
+}
+
+h2::first-letter {
+  font-size: 200%;
+}
+
+.level {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  color: maroon;
+  padding: 10px;
+  font-family: "Arial Black", sans-serif;
+  min-width: 100px;
+  width: 10%;
+  border-radius: 10px;
+  margin: 0px;
+  margin-left: 5%;
+}
+
+.level:hover {
+	background-color: maroon;
+	color: white;
+}
+
+#gameScreen {
+	width: 90%;
+	height: 490px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border: 2px solid black;
+	//margin-top: 8%;
+}
+
+#back_button {
+	padding: 10px;
+  background-color: white;
+  color: maroon;
+  font-family: "Arial Black", sans-serif;
+  min-width: 100px;
+  border-color: maroon;
+  border-radius: 10px;
+  top:5px;
+  left:5px;
+  position: fixed;
+}
+
+.space {
+	border-radius: 40px;
+	border: 2px solid black;
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	background-color: white;
+}
+
+/* Column 1 */
+#space0 {
+	position: absolute;
+	left: 13.7%;
+	top: 26%;
+}
+
+#space1 {
+	position: absolute;
+	left: 13.7%;
+	top: 40%;
+}
+
+#space2 {
+	position: absolute;
+	left: 13.7%;
+	top: 54%;
+}
+
+/* Column 2 */
+#space3 {
+	position: absolute;
+	left: 24%;
+	top: 20%;
+}
+
+#space4 {
+	position: absolute;
+	left: 24%;
+	top: 34%;
+}
+
+#space5 {
+	position: absolute;
+	left: 24%;
+	top: 48%;
+}
+
+#space6 {
+	position: absolute;
+	left: 24%;
+	top: 62%;
+}
+
+/* Column 3 */
+#space7 {
+	position: absolute;
+	left: 35%;
+	top: 26%;
+}
+
+#space8 {
+	position: absolute;
+	left: 35%;
+	top: 40%;
+}
+
+#space9 {
+	position: absolute;
+	left: 35%;
+	top: 54%;
+}
+
+/* Column 4 */
+#space10 {
+	position: absolute;
+	left: 45.5%;
+	top: 20%;
+}
+
+#space11 {
+	position: absolute;
+	left: 45.5%;
+	top: 34%;
+}
+
+#space12 {
+	position: absolute;
+	left: 45.5%;
+	top: 48%;
+}
+
+#space13 {
+	position: absolute;
+	left: 45.5%;
+	top: 62%;
+}
+
+/* Column 5 */
+#space14 {
+	position: absolute;
+	left: 56%;
+	top: 26%;
+}
+
+#space15 {
+	position: absolute;
+	left: 56%;
+	top: 40%;
+}
+
+#space16 {
+	position: absolute;
+	left: 56%;
+	top: 54%;
+}
+
+/* Column 6 */
+#space17 {
+	position: absolute;
+	left: 67%;
+	top: 20%;
+}
+
+#space18 {
+	position: absolute;
+	left: 67%;
+	top: 34%;
+}
+
+#space19 {
+	position: absolute;
+	left: 67%;
+	top: 48%;
+}
+
+#space20 {
+	position: absolute;
+	left: 67%;
+	top: 62%;
+}
+
+/* Column 7 */
+#space21 {
+	position: absolute;
+	left: 78%;
+	top: 26%;
+}
+
+#space22 {
+	position: absolute;
+	left: 78%;
+	top: 40%;
+}
+
+#space23 {
+	position: absolute;
+	left: 78%;
+	top: 54%;
+}
+
+/* Pass button */
+#space24 {
+	border-radius: 50px;
+	border: 2px solid black;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 85%;
+	top: 40%;
+	background-color: purple;
+	color: white;
+	font-size: 200%;
+	display: none;
+}
+
+#common_footer {
+  margin-bottom: 10px;
+  float: left;
+}

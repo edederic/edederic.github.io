@@ -1,0 +1,82 @@
+body {
+  background-image: url(https://ak2.picdn.net/shutterstock/videos/21923776/thumb/1.jpg);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Comic Sans MS', sans-serif;
+  margin-top: 10%;
+  color: gold;
+}
+
+h2 {
+  font-family: 'Comic Sans MS', sans-serif;
+  color: gold;
+}
+
+h2::first-letter {
+  font-size: 200%;
+}
+
+button {
+  padding: 10px;
+  background-color: white;
+  color: maroon;
+  font-family: "Arial Black", sans-serif;
+  min-width: 100px;
+  border-color: maroon;
+  border-radius: 10px;
+}
+
+button img {
+  height: 75px;
+  max-width: 75px;
+}
+
+footer {
+  position: fixed;
+  bottom:0;
+  margin-bottom: 10px;
+  float: left;
+}
+
+#home_p {
+  text-align: left;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  line-height: 150%;
+}
+
+#reset {
+  font-size: 105%;
+  width: 19%;
+}
+
+#back_button {
+  top:5px;
+  left:5px;
+  position: fixed;
+}
+
+#sameGame, #sliderGame {
+  border: solid 3px white;
+}
+
+#same_game_nav, #monster_nav {
+  margin-right: 25px;
+}
+
+.row {
+  display: block;
+}
+
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 0px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Swimmer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Swimmer Game">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="../unit_12.css">
+</head>
+
+<body>
+  <button id="back_button" onclick="window.location.href='../index.html'">
+    Return to Home Screen</button>
+  <h2>Welcome to SWIMMER</h2>
+  <p>
+       Drag and drop the swimmer to the beach while avoiding the sharks.
+       You can only move one square at a time.
+  </p>
+  
+  <!--<canvas id="sliderGame" width="600" height="400">
+  Your browser doesn't support the HTML5 canvas tag</canvas>-->
+  
+  <!-- Game board -->
+	
+      <!-- Row 0 -->
+	<div id="row0" class="row">
+	  <div id="00" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="01" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="02" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="03" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="04" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	
+	  <!-- Row 1 -->
+	<div id="row1" class="row">
+	  <div id="10" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="11" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="12" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="13" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="14" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	
+	  <!-- Row 2 -->
+	<div id="row2" class="row">
+	  <div id="20" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="21" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="22" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="23" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="24" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	
+	  <!-- Row 3 -->
+	<div id="row3" class="row">
+	  <div id="30" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="31" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="32" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="33" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="34" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	
+	  <!-- Row 4 -->
+	<div id="row4" class="row">
+	  <div id="40" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="41" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="42" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="43" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	  <div id="44" class="square" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+  
+  <br />
+  <!--<button id="reset" onclick="reset()">Reset</button>-->
+
+  <footer>
+    Created by Edgar Gutierrez and Emily Dederick
+  </footer>
+</body>
+
+<script src="swimGame.js"></script>
+
+</html>
