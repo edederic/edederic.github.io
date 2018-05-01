@@ -82,6 +82,7 @@
   
   function checkIfWon() {
 	if (squares[1].state == 2) {
+	  var audio = new Audio("../sounds/win.mp3").play();
 	  alert("You win!");
 	  document.getElementById("00").firstChild.draggable = false;
 	}
@@ -125,6 +126,11 @@
 		// Y direction
 	var yDistance = targetY - Number(data.substr(1,1));
 	if (yDistance < -1 || yDistance > 1) { return; }
+	
+	// Play sound
+	if (!(targetX == 0 && targetY == 0)) {
+		var audio = new Audio("../sounds/DOOdoo.mp3").play();
+	}
 	
 	// Switch squares (swimmer and water img sources)
 	ev.target.src = (document.getElementById(data)).src;

@@ -430,11 +430,13 @@ function computerFarmer(monstersRemaining) {
 
 	if (spaces[index].state == "cow") {
 		spaces[index].state = "deadCow";
+		var audio = new Audio("../sounds/cowDead.mp3").play();
 		++totalCowsKilled;
 		//alert("Total cows killed: " + totalCowsKilled);
 	}
 	else {
 		spaces[index].state = "deadMonster";
+		var audio = new Audio("../sounds/monsterDead.mp3").play();
 		++totalMonstersKilled;
 		//alert("Total monsters killed: " + totalMonstersKilled);
 	}
@@ -534,6 +536,7 @@ function playerPlaceCow() {
 			if (dx * dx + dy * dy <= 15 * 15 && spaces[i].state == "empty") {
 				//alert(dx * dx + dy * dy + " state: " + spaces[i].state);
 				spaces[i].state = "cow";
+				var audio = new Audio("../sounds/DOOdoo.mp3").play();
 				++cowsPlaced;
 				drawScreen();
 			}
@@ -1206,6 +1209,7 @@ $(".space").click(function() {
 			if (i == spaceID && currentSpaceState == "cow" && cowsThatCanBeKilled.indexOf(i) != -1) {
 
 				spaces[i].state = "deadCow";
+				var audio = new Audio("../sounds/cowDead.mp3").play();
 				++totalCowsKilled;
 				$(this).css("background-color", "red");
 				this.innerHTML = "<img width='60' height='60' src='../images/cow_head.png' alt='A cute cow head'>";
@@ -1271,6 +1275,8 @@ $(".space").click(function() {
 					selectedSpace = i;
 					resetSpaces();
 
+					var audio = new Audio("../sounds/DOOdoo.mp3").play();
+					
 					spaces[selectedSpace].state = spaces[selectedCow].state;
 					spaces[selectedCow].state = "empty";
 					beenMoved.push(selectedSpace);
@@ -1397,6 +1403,7 @@ $(".space").click(function() {
 			if (i == spaceID && currentSpaceState == "empty") {
 
 				spaces[i].state = "cow";
+				var audio = new Audio("../sounds/DOOdoo.mp3").play();
 				++cowsPlaced;
 				drawSpaces();
 
@@ -1443,6 +1450,7 @@ $(".space").click(function() {
 
 				if (currentSpaceState == "cow") {
 					spaces[i].state = "deadCow";
+					var audio = new Audio("../sounds/cowDead.mp3").play();
 					drawSpaces();
 					++totalCowsKilled;
 
@@ -1494,6 +1502,7 @@ $(".space").click(function() {
 				}
 				else {
 					spaces[i].state = "deadMonster";
+					var audio = new Audio("../sounds/monsterDead.mp3").play();
 					drawSpaces();
 					++totalMonstersKilled;
 
@@ -1537,9 +1546,11 @@ $(".space").click(function() {
 
 							alert("Final score: " + finalScore);
 
-							highscore(finalScore);
+							//highscore(finalScore);
 
 							$("footer").html("<p>Thanks for playing!</p>");
+							
+							var audio = new Audio("../sounds/win.mp3").play();
 
 							break;
 						}
